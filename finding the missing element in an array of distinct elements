@@ -1,0 +1,21 @@
+class shubham {
+    //function to find the  missing elemnet from the distinct elements
+    public static int missingelement(int[] arr){
+        int n=arr.length;
+        int sum=0;
+        //the actual length of the array is n+1 because one element is missing
+        int m=n+1;
+        //finding the sum my formulae of natural numbers
+        int total=m*(m+1)/2;
+        //finding the actual sum
+        for(int i=0;i<n;i++){
+            sum=sum+arr[i];
+            }
+            int missingone=total-sum;
+            return missingone;}
+    public static void main(String[] args) {
+        System.out.println("Hello, World!"); 
+        int[] x={1,2,4,5,6,7,8,9,10};
+        System.out.println(missingelement(x));
+    }
+}
